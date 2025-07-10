@@ -1,11 +1,13 @@
 require('dotenv').config();
+
+// Load modules
 const bot = require('./bot');
-const tradeEngine = require('./tradeEngine');
+const tradeExecutor = require('./tradeExecutor');
 
+// Start bot and executor
+bot.init(tradeExecutor);
+tradeExecutor.init(bot);
+
+// Optional: Log server start
 const PORT = process.env.PORT || 3000;
-require('http').createServer(() => {}).listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
-bot.init(tradeEngine);
-tradeEngine.init(bot);
+console.log(`Service running on port ${PORT}`);
