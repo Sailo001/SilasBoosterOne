@@ -42,4 +42,4 @@ async function executeTrade(wallet, tokenAddress, isBuy, amountEth = "0.01") {
 module.exports = {
   buyToken: (wallet, tokenAddress, amountEth) => executeTrade(wallet, tokenAddress, true, amountEth),
   sellToken: (wallet, tokenAddress, amountEth) => executeTrade(wallet, tokenAddress, false, amountEth)
-};￼Enter
+};
