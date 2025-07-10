@@ -4,8 +4,7 @@ require('dotenv').config();
 const bot = require('./bot');
 const tradeExecutor = require('./tradeExecutor');
 
-// Start bot and executor
-bot.init(tradeExecutor);
+// Initialize executor with bot
 tradeExecutor.init(bot);
 
 // Optional: Log server start
