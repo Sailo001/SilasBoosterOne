@@ -1,9 +1,0 @@
-/SilasBoosterOne
-  |-- index.js
-  |-- bot.js
-  |-- tradeEngine.js
-  |-- walletManager.js
-  |-- utils.js
-  |-- .env           # Not committed to GitHub!
-  |-- package.json
-  |-- README.md
