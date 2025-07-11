@@ -12,3 +12,4 @@
     "ethers": "^6.8.1",
     "node-telegram-bot-api": "^0.61.0"
   }
+}
