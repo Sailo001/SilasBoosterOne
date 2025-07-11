@@ -46,3 +46,4 @@ export function setupBot() {
     if (data === 'revive_prompt') bot.sendMessage(message.chat.id, 'Send `/revive <TOKEN_ADDRESS>` to begin.')
     bot.answerCallbackQuery(id)
   })
+}
